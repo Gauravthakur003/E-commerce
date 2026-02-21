@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>E-Shop Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+
+<div class="admin-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2>E-Shop Admin</h2>
+    <nav>
+      <a class="active"><i class="fas fa-chart-line"></i> Dashboard</a>
+      <a><i class="fas fa-box"></i> Products</a>
+      <a><i class="fas fa-shopping-bag"></i> Orders</a>
+      <a><i class="fas fa-users"></i> Users</a>
+      <a><i class="fas fa-credit-card"></i> Payments</a>
+      <a><i class="fas fa-cog"></i> Settings</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+      <h1>Dashboard</h1>
+      <span class="admin-name">Admin</span>
+    </header>
+
+    <!-- KPI CARDS -->
+    <section class="kpis">
+      <div class="card">
+        <h4>Total Revenue</h4>
+        <p>₹ 12,40,000</p>
+      </div>
+      <div class="card">
+        <h4>Orders</h4>
+        <p>1,420</p>
+      </div>
+      <div class="card">
+        <h4>Users</h4>
+        <p>820</p>
+      </div>
+      <div class="card">
+        <h4>Products</h4>
+        <p>164</p>
+      </div>
+    </section>
+
+    <!-- CHART -->
+    <section class="charts">
+      <div class="chart-box">
+        <h3>Sales Trend</h3>
+        <canvas id="salesChart"></canvas>
+      </div>
+
+      <div class="chart-box">
+        <h3>Category Performance</h3>
+        <canvas id="categoryChart"></canvas>
+      </div>
+    </section>
+
+    <!-- RECENT ORDERS -->
+    <section class="orders">
+      <h3>Recent Orders</h3>
+      <table>
+        <tr>
+          <th>Order ID</th>
+          <th>User</th>
+          <th>Amount</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>#1023</td>
+          <td>Gaurav</td>
+          <td>₹3,200</td>
+          <td class="success">Paid</td>
+        </tr>
+        <tr>
+          <td>#1022</td>
+          <td>Aman</td>
+          <td>₹1,800</td>
+          <td class="pending">Pending</td>
+        </tr>
+      </table>
+    </section>
+
+  </main>
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

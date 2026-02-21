@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo">E-Shop</div>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search products...">
+    <i class="fas fa-search"></i>
+  </div>
+
+ 
+  <div class="nav-icons">
+    <i class="fas fa-heart"></i>
+    <i class="fas fa-shopping-cart"></i>
+     <div class="login-fix">
+      <a href="login.html" class="login-btn">SIGN IN</a>
+    </div>
+     <!-- Hamburger Toggle -->
+<input type="checkbox" id="menu-toggle">
+
+<label for="menu-toggle" class="hamburger">
+ 
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#categories">Shop</a>
+    <a href="index.html#trending">Trending</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  </div>
+</header>
+
+
+  <!-- ================= LOGIN BOX ================= -->
+  <div class="login-container">
+    <div class="login-box">
+      <h2>Login</h2>
+
+      <form action="#" method="post">
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+
+      <p>
+        Don't have an account?
+        <a href="register.html">Sign up</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

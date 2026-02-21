@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Shop | Checkout</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/checkout.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo">E-Shop</div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#categories">Shop</a>
+    <a href="index.html#trending">Trending</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ================= CHECKOUT ================= -->
+<section class="checkout-page">
+  <h2>Checkout</h2>
+
+  <form class="checkout-form" action="success.html" method="post">
+    <div class="input-group">
+      <input type="text" required />
+      <label>Full Name</label>
+    </div>
+
+    <div class="input-group">
+      <input type="text" required />
+      <label>Address</label>
+    </div>
+
+    <div class="input-group">
+      <input type="text" required />
+      <label>City</label>
+    </div>
+
+    <div class="input-group">
+      <input type="tel" required />
+      <label>Phone Number</label>
+    </div>
+
+    <button type="submit" class="primary-btn">
+      Place Order
+    </button>
+  </form>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2025 E-Shop | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

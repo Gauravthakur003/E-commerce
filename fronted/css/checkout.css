@@ -1,0 +1,201 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: #f7f7f7;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.35s ease, color 0.35s ease;
+}
+
+/* ================= DARK MODE ================= */
+body.dark {
+  background: #0e0e0e;
+  color: #eaeaea;
+}
+
+body.dark .navbar,
+body.dark .nav-links,
+body.dark footer,
+body.dark .checkout-page {
+  background: #111;
+}
+
+body.dark .checkout-form input {
+  background: #1a1a1a;
+  color: #eee;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 50px;
+  background: #000;
+  color: #fff;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f5b921;
+}
+
+/* ================= CHECKOUT PAGE ================= */
+.checkout-page {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 40px 30px;
+  margin: 60px 20px;
+  border-radius: 12px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.checkout-page h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #111;
+}
+
+/* ================= FORM ================= */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f4f4f4;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #f5b921;
+  background: #fff;
+}
+
+.input-group label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.3s ease all;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: -8px;
+  font-size: 12px;
+  color: #f5b921;
+  background: #fff;
+  padding: 0 4px;
+}
+
+/* ================= BUTTON ================= */
+.primary-btn {
+  padding: 14px;
+  background: #f5b921;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.primary-btn:hover {
+  background: #ffd24d;
+  transform: translateY(-2px);
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .checkout-page {
+    margin: 50px 15px;
+    padding: 35px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkout-page {
+    padding: 30px 20px;
+    margin: 40px 10px;
+  }
+
+  .checkout-page h2 {
+    font-size: 24px;
+  }
+}

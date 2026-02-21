@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Shop | Register</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+<div class="auth-container">
+
+  <!-- REGISTER CARD -->
+  <div class="auth-card" id="registerCard">
+    <h2>Create Account</h2>
+    <p class="sub-text">Join E-Shop for the best fashion deals</p>
+
+    <form id="registerForm">
+      <div class="input-group">
+        <i class="fa fa-user"></i>
+        <input type="text" placeholder="Full Name" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fa fa-envelope"></i>
+        <input type="email" placeholder="Email Address" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fa fa-phone"></i>
+        <input type="tel" placeholder="Mobile Number" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Create Password" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Confirm Password" required>
+      </div>
+
+      <label class="terms">
+        <input type="checkbox" required>
+        I agree to the Terms & Conditions
+      </label>
+
+      <button type="submit" class="primary-btn">
+        Send OTP
+      </button>
+
+      <p class="switch">
+        Already have an account?
+        <a href="login.html">Login</a>
+      </p>
+    </form>
+  </div>
+
+  <!-- OTP CARD -->
+  <div class="auth-card hidden" id="otpCard">
+    <h2>Verify OTP</h2>
+    <p class="sub-text">
+      Enter the 6-digit code sent to your phone
+    </p>
+
+    <div class="otp-box">
+      <input type="text" maxlength="1">
+      <input type="text" maxlength="1">
+      <input type="text" maxlength="1">
+      <input type="text" maxlength="1">
+      <input type="text" maxlength="1">
+      <input type="text" maxlength="1">
+    </div>
+
+    <button class="primary-btn">Verify & Register</button>
+
+    <p class="resend">
+      Didn’t receive OTP?
+      <a href="#">Resend</a>
+    </p>
+  </div>
+
+</div>
+
+<script src="js/register.js"></script>
+</body>
+</html>
